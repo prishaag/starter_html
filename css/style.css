@@ -117,6 +117,7 @@ nav a {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    
 }
 .thumbnail {
     width: 400px;
@@ -130,9 +131,10 @@ nav a {
 }
 
 .largeimages img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     animation: fadeInScale 1s ease-in-out;
+    grid-column: 1 / -1;
 }
 
 .grid-container img {
@@ -186,6 +188,7 @@ img {
         color: hsl(210, 62%, 34%);
         top: 10px;
         left: 10px;
+        font-family: 'Verdana';
     }
     nav{
         border: 2px solid hsl(210, 62%, 34%);

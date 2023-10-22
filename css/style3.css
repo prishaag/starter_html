@@ -13,10 +13,7 @@ text{
 #skip {
     position: absolute;
     top: -40px;
-    left: -40px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    left: -40px;   
 }
 
 nav {
@@ -169,6 +166,13 @@ img {
     }
     nav{
         border: 2px solid hsl(210, 62%, 34%);
+    }
+    #skip {
+        position: absolute;
+        color: hsl(210, 62%, 34%);
+        top: 10px;
+        left: 10px;
+        font-family: 'Verdana';
     }
     
     p {

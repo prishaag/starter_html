@@ -10,7 +10,7 @@ body {
 #skip {
     position: absolute;
     top: -40px;
-    left: -40px;
+    left: -40px;   
 }
 
 nav {
@@ -141,7 +141,7 @@ span {
 }
 
 img {
-    border: 5px solid #34495e;
+    border: 5px solid #5b5189;
     padding: 1px;
     border-radius: 30px;
    
@@ -262,9 +262,12 @@ nav li {
 
 @media only screen and (min-width: 800px) {
     #skip {
-        display: inline-block;
+        position: absolute;
+        color: hsl(210, 62%, 34%);
+        top: 10px;
+        left: 10px;
+        font-family: 'Verdana';
     }
-    
     p {
         line-height: 1.8;
         grid-column: 1 / -1;
