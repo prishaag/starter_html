@@ -1,8 +1,8 @@
 body {
     display: grid;
     place-items: center;
-    background-color: #f7f1f0;
-    color: #2c3e50;
+    background-color: #dceef5;
+    color: #000000;
     font-family: 'Arial', sans-serif;
     
 }
@@ -31,7 +31,7 @@ nav li {
 
 nav a.active {
     text-decoration: underline;
-    color: #a15c38;
+    color: #1414b7;
 }
 
 .thumbnail {
@@ -39,7 +39,7 @@ nav a.active {
 }
 
 a:hover {
-    color: #a15c38;
+    color: #1414b7;
 }
 
 .gallery {
@@ -51,14 +51,14 @@ a:hover {
 
 h1 {
     font-size: 50px;
-    color: #604232;
+    color:  #6e487a;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #bb816d;
+    color: #705cba;
     text-align: center;
     width: 100%;
 }
@@ -66,7 +66,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #d8957f;
+    color: #4094e3;
     text-align: center;
     white-space: nowrap;
     width: 100%;
