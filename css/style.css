@@ -4,7 +4,7 @@ body {
     background-color: #f7f1f0;
     color: #2c3e50;
     font-family: 'Arial', sans-serif;
-    margin: 0; /* Reset default margin */
+    
 }
 
 #skip {
@@ -225,7 +225,7 @@ nav a {
         width: 250px;
         height: 250px;
         object-fit: cover;
-        border: 5px solid #34495e;
+        
     }
 
     
