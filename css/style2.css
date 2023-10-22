@@ -48,13 +48,7 @@ a:hover {
 }
 
 
-.large-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    animation: fadeInScale 1s ease-in-out;
-}
+
 
 h1 {
     font-size: 50px;
@@ -110,21 +104,9 @@ h3 {
     width: 100%;
 }
 
-.additional {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center; 
-    gap: 20px; 
-    text-align: center; 
-   
-}
 
-img {
-    border: 5px solid #5b5189;
-    padding: 0px;
-    border-radius: 30px;
-    
-}
+
+
 
 
 
@@ -163,10 +145,8 @@ img {
     border-radius: 30px;
    
 }
-.firstadditional img{
-    width: 430px;
-    height:300px;
-}
+
+
 
 nav a {
     padding: 5px;
@@ -204,10 +184,7 @@ h3 {
     text-align: center; 
 }
 
-.additional img {
-    width: 210px; 
-    height: 150px;
-}
+
 
 .origin {
     color: #065f8c;
@@ -239,15 +216,31 @@ nav li {
     list-style-type: decimal;
     text-align: left;
 }
- 
 .lastimages {
-    width:200px;
-    height:200px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    justify-content: center; 
-} 
+    justify-content: center;
+}
+
+.lastimages img {
+    width: 200px; /* Adjust the width to fit the container */
+    height: 150px; /* Maintain the aspect ratio */
+}
+ 
+.large-images {
+    display: inline-block;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.large-images img {
+    width: 500px;
+    height: 400px;
+   
+}
+
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -308,17 +301,10 @@ nav li {
         align-items: center;
         text-align: center;
     }
+   
     
-    .large-images {
-        display: grid;
-        justify-content: center;
-        gap: 20px;
-    }
     
-    .large-images img {
-        width: 600px;
-        height: 500px
-    }
+    
     .thumbnail {
         width: 400px;
     }
@@ -334,6 +320,13 @@ nav li {
     nav{
         border: 2px solid hsl(210, 62%, 34%);
     }
+    .lastimages img {
+        width: 300px; /* Adjust the width to fit the container */
+        height: 200px; /* Maintain the aspect ratio */
+        justify-self: center;
+        gap: 100px;
+    }
+    
     
        
 }
