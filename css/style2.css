@@ -13,9 +13,7 @@ body {
 a:hover {
     color: #EA930E;
 }
-ul {
-    grid-template-columns: 1fr;
-}
+
 
 body {
     background-color: #f5f5eb;
@@ -67,6 +65,16 @@ h2 {
     width: 100%; 
     
 }
+nav {
+    font-size: 18px;
+    text-align: center;  
+    
+}
+
+nav a.active {
+    text-decoration: underline;
+    color:#EA930E;
+}
 
 h3 {
     font-size: 20px;
@@ -83,7 +91,7 @@ p {
 }
 
 ul {
-    list-style-type: none;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -96,10 +104,15 @@ li {
     padding: 5px;
     text-align: center;
 }
+span {
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
 
 img {
     border: 5px solid #34495e;
-    padding: 10px;
+    padding: 1px;
     border-radius: 30px;
     max-width: 100%;
     height: auto;
@@ -117,6 +130,56 @@ nav a {
     align-items: center;
     text-align: center;
 }
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.steps ol {
+    text-align: left;
+    margin: 10px 0;
+
+}
+.additional {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Each column will be the width of the content */
+    justify-content: center; /* Center the grid items horizontally */
+    gap: 20px; /* Add some space between the images */
+}
+
+.additional img {
+    width: 100%; /* Ensure the images take up the entire width of their containers */
+    height: 100px; /* Maintain the aspect ratio of the images */
+    width: 150px;
+}
+
+.origin {
+    color: #033047; /* Change color to the desired color */
+}
+
+.source {
+    color: green; /* Change color to the desired color */
+}
+
+.category {
+    color: red; /* Change color to the desired color */
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +216,7 @@ nav a {
     }
     
     ul {
-        list-style-type: none;
+        
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
@@ -211,6 +274,22 @@ nav a {
         height: auto;
         border: 5px solid #34495e;
     }
+    .additional {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Distribute the space equally among the three columns */
+        gap: 20px;
+        justify-content: center; /* Center the grid items horizontally */
+        
+    }
+    
+    .additional img {
+       width: 200px;
+       height: 200px;
+       display: block; /* Ensure the images are displayed as block elements */
+       margin: 0 auto; /* Center the images within their containers */
+    }
+
+    
 
     
 

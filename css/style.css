@@ -8,6 +8,12 @@ body {
 nav {
     font-size: 18px;
     text-align: center;  
+    
+}
+
+nav a.active {
+    text-decoration: underline;
+    color:#EA930E;
 }
 
 ul {
@@ -88,7 +94,7 @@ li {
 
 img {
     border: 5px solid #34495e;
-    padding: 10px;
+    padding: 0px;
     border-radius: 30px;
     max-width: 100%;
     height: auto;
