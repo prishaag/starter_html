@@ -3,11 +3,11 @@ body {
     place-items: center;
     background-color: #dceef5;
     color: #000000;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana';
     
 }
 text{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana';
 }
 
 #skip {
@@ -17,26 +17,25 @@ text{
 }
 
 nav {
-    border: 5px solid hsl(210, 62%, 34%);
-    font-size: 18px;
-    text-align: center;
-    grid-column: 1 / -1;
-    width: 100%; 
+border: 5px solid hsl(210, 62%, 34%);
+font-size: 18px;
+text-align: center;
+grid-column: 1 / -1;
+width: 100%;
+font-family: 'Verdana';
 }
-
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: center;
 }
-
 nav li {
-    display: inline-block;
+display: inline-block;
 }
 
 nav a.active {
-    text-decoration: underline;
-    color: hsl(210, 62%, 34%);
+text-decoration: underline;
+color: hsl(210, 62%, 34%);
 }
 
 .thumbnail {
@@ -52,6 +51,7 @@ h1 {
     color:  #2368a7;
     text-align: center;
     font-family: 'Chalkduster';
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -129,7 +129,8 @@ img {
   .gallery {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px; /* Adjust the gap between images as needed */
+    gap: 20px; /* Adjust the gap between images as needed */
+
   }
   
   .gallery img {
