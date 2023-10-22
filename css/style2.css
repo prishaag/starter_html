@@ -238,20 +238,14 @@ nav li {
 .large-images img {
     width: 500px;
     height: 400px;
-   
+    animation: fadeInScale 1s ease-in-out;
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
-    img[src$=".gif"] {
-    display: none; /* Hide GIFs when the user prefers reduced motion */
+    .large-images img {
+        animation: none;
     }
-    .grid-container img {
-    animation: none;
-    }
-    }
-    
+}
 
 @keyframes fadeInScale {
     0% {
@@ -263,6 +257,7 @@ nav li {
         transform: scale(1);
     }
 }
+
 
 @media only screen and (min-width: 800px) {
     #skip {
