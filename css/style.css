@@ -8,11 +8,16 @@ body {
 }
 
 #skip {
-    display: none;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 nav {
-    border: 1px solid hsl(210, 29%, 24%);
+    border: 5px solid hsl(210, 62%, 34%);
     font-size: 18px;
     text-align: center;
     grid-column: 1 / -1;
@@ -31,7 +36,7 @@ nav li {
 
 nav a.active {
     text-decoration: underline;
-    color: #1414b7;
+    color: hsl(210, 62%, 34%);
 }
 
 .thumbnail {
@@ -39,7 +44,7 @@ nav a.active {
 }
 
 a:hover {
-    color: #1414b7;
+    color: hsl(210, 62%, 34%);
 }
 
 .gallery {
@@ -47,18 +52,19 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 h1 {
     font-size: 50px;
-    color:  #6e487a;
+    color:  #2368a7;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #705cba;
+    color: #634eb0;
     text-align: center;
     width: 100%;
 }
@@ -66,7 +72,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #4094e3;
+    color: #2368a7;
     text-align: center;
     white-space: nowrap;
     width: 100%;
@@ -93,10 +99,10 @@ li {
 }
 
 img {
-    border: 5px solid #895e49;
+    border: 5px solid #5b5189;
     padding: 0px;
     border-radius: 30px;
-    max-width: 100%;
+   
     height: auto;
 }
 
@@ -164,6 +170,9 @@ nav a {
     #skip {
         display: block;
     }
+    nav{
+        border: 2px solid hsl(210, 62%, 34%);
+    }
     
     p {
         line-height: 1.8;
@@ -180,26 +189,21 @@ nav a {
     }
     
     img {
-        border: 5px solid #34495e;
+        
         padding: 10px;
         border-radius: 30px;
-        max-width: 100%;
+        
         height: auto;
     }
     
-    
-    nav a {
-        
-        
-        text-decoration: none;
-        color: #2c3e50;
-    }
     .gallery {
-        display: flex;
+        display: block;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        
     }
+
     
     .large-images {
         display: flex;
@@ -209,7 +213,7 @@ nav a {
     
     .large-images img {
         width: 600px;
-        height: 500px
+        height: 500px;
     }
     .thumbnail {
         width: 400px;

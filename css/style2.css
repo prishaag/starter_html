@@ -1,36 +1,113 @@
 body {
     display: grid;
     place-items: center;
-    background-color: #f7f1f0;
-    color: #2c3e50;
+    background-color: #dceef5;
+    color: #000000;
     font-family: 'Arial', sans-serif;
-    margin: 0; 
-   
+    
 }
 
 #skip {
-    display: none;
-}
-
-a:hover {
-    color: #EA930E;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 nav {
-    border: 1px solid hsl(210, 29%, 24%);
+    border: 4px solid hsl(210, 62%, 34%);
     font-size: 18px;
     text-align: center;
     grid-column: 1 / -1;
     width: 100%; 
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+}
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: hsl(210, 62%, 34%);
+}
+a:hover {
+    color: hsl(210, 62%, 34%);
+}
+
+
 .large-images {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: auto;
     animation: fadeInScale 1s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+    color:  #2368a7;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #634eb0;
+    text-align: center;
+    width: 100%;
+}
+.origin,.source,.category{
+    font-size: 16px;
+    font-weight: bold;
+    color: #2368a7;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: hsl(210, 62%, 34%);
+}
+
+.thumbnail {
+    margin: 10px 0;
+}
+
+a:hover {
+    color: hsl(210, 62%, 34%);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2368a7;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .additional {
@@ -42,40 +119,14 @@ nav {
    
 }
 
-.additional img {
-    width: 100%;
+img {
+    border: 5px solid #5b5189;
+    padding: 0px;
+    border-radius: 30px;
     
-    height: auto;
-    
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
-    color: #EA930E;
-}
 
-h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2980b9;
-    text-align: center;
-    width: 100%;
-}
-
-nav a.active {
-    text-decoration: underline;
-    color: #EA930E;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2980b9;
-    text-align: center;
-    white-space: nowrap;
-    width: 100%;
-}
 
 p {
     line-height: 1.8;
@@ -90,6 +141,8 @@ ul {
     padding: 0;
     justify-content: center;
     text-align: center; 
+    
+    
 }
 
 li {
@@ -108,13 +161,11 @@ img {
     border: 5px solid #34495e;
     padding: 1px;
     border-radius: 30px;
-    max-width: 100%;
-    height: auto; 
+   
 }
 .firstadditional img{
-    width: 450px;
-    height:200px;
-
+    width: 430px;
+    height:300px;
 }
 
 nav a {
@@ -143,10 +194,7 @@ h3 {
     
 }
 
-.steps ol {
-    text-align: left;
-    
-}
+
 
 .additional {
     display: grid;
@@ -162,15 +210,15 @@ h3 {
 }
 
 .origin {
-    color: #033047;
+    color: #065f8c;
 }
 
 .source {
-    color: green;
+    color: #065f8c;
 }
 
 .category {
-    color: red;
+    color: #065f8c;
 }
 
 .thumbnail {
@@ -186,6 +234,21 @@ nav ul {
 nav li {
     display: inline-block;
 }
+
+ ol li {
+    list-style-type: decimal;
+    text-align: left;
+}
+ 
+.lastimages {
+    width:200px;
+    height:200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+    justify-content: center; 
+} 
+
 
 @media (prefers-reduced-motion: reduce) {
     img[src$=".gif"] {
@@ -208,14 +271,9 @@ nav li {
     }
 }
 
-
-
-
-
-
 @media only screen and (min-width: 800px) {
     #skip {
-        display: block;
+        display: inline-block;
     }
     
     p {
@@ -236,8 +294,6 @@ nav li {
         border: 5px solid #34495e;
         padding: 10px;
         border-radius: 30px;
-        max-width: 100%;
-        height: auto;
     }
     
     
@@ -275,30 +331,9 @@ nav li {
         align-items: center;
         text-align: center;
     }
-    
-    .additional img {
-        width: 100%;
-        height: auto;
-        border: 5px solid #34495e;
-    }
-    .additional {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        gap: 20px;
-        justify-content: center; 
-        
+    nav{
+        border: 2px solid hsl(210, 62%, 34%);
     }
     
-    .additional img {
-       width: 200px;
-       height: 200px;
-       display: block; 
        
-    }
-
-    
-
-    
-
-      
 }
