@@ -4,7 +4,7 @@ body {
     background-color: #f7f1f0;
     color: #2c3e50;
     font-family: 'Arial', sans-serif;
-    margin: 0; /* Reset default margin */
+    margin: 0; 
    
 }
 
@@ -40,14 +40,14 @@ nav {
     justify-content: center; 
     gap: 20px; 
     text-align: center; 
-    margin-top: 20px;
+   
 }
 
 .additional img {
     width: 100%;
     max-width: 200px;
     height: auto;
-    margin-bottom: 20px;
+    
 }
 
 h1 {
@@ -136,12 +136,12 @@ nav a {
 h3 {
     grid-column: 1 / -1;
     text-align: center;
-    margin: 20px 0;
+    
 }
 
 .steps ol {
     text-align: left;
-    margin: 10px 0;
+    
 }
 
 .additional {
@@ -290,7 +290,7 @@ nav li {
        width: 200px;
        height: 200px;
        display: block; 
-       margin: 0 auto; 
+       
     }
 
     
