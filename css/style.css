@@ -6,7 +6,7 @@ body {
     display: none;
 }
 nav {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;  
     
 }
@@ -251,8 +251,5 @@ nav a {
     .grid-container img:nth-child(5) {
         grid-column-start: 4;
         grid-column-end: 5;
-    }
-    
-    
-   
+    }  
 }
