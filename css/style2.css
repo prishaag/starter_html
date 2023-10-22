@@ -3,7 +3,7 @@ body {
     color: #2c3e50;
     font-family: 'Arial', sans-serif;
     display: grid;
-    place-items: center; /* Center the content both horizontally and vertically */
+    place-items: center; 
 }
 
 #skip {
@@ -19,7 +19,7 @@ nav {
     font-size: 18px;
     text-align: center;
     grid-column: 1 / -1;
-    width: 100%; /* Set the width to 100% */
+    width: 100%; 
 }
 
 .large-images {
@@ -33,8 +33,11 @@ nav {
 }
 
 .additional {
-    display: block;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center; 
+    gap: 20px; 
+    text-align: center; 
     margin-top: 20px;
 }
 
@@ -76,7 +79,7 @@ h3 {
 p {
     line-height: 1.8;
     grid-column: 1 / -1;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 ul {
@@ -85,7 +88,7 @@ ul {
     gap: 20px;
     padding: 0;
     justify-content: center;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 li {
@@ -144,11 +147,11 @@ h3 {
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 20px;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 .additional img {
-    width: 150px; /* Update the width of the images */
+    width: 150px; 
     height: 100px;
 }
 
@@ -267,17 +270,17 @@ nav li {
     }
     .additional {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* Distribute the space equally among the three columns */
+        grid-template-columns: 1fr 1fr 1fr; 
         gap: 20px;
-        justify-content: center; /* Center the grid items horizontally */
+        justify-content: center; 
         
     }
     
     .additional img {
        width: 200px;
        height: 200px;
-       display: block; /* Ensure the images are displayed as block elements */
-       margin: 0 auto; /* Center the images within their containers */
+       display: block; 
+       margin: 0 auto; 
     }
 
     
