@@ -61,7 +61,7 @@ color: #634eb0;
 text-align: center;
 width: 100%;
 font-family: 'Chalkduster';
-margin: -1px;
+margin: 20px;
 }
 .origin,.source,.category{
 font-size: 20px;
@@ -70,6 +70,7 @@ color: #2368a7;
 text-align: center;
 width: 100%;
 font-family: 'Chalkduster';
+margin: 5px;
 }
 
 h3 {
@@ -258,7 +259,6 @@ padding: 0;
 justify-content: center;
 }
 img {
-border: 5px solid #34495e;
 padding: 10px;
 border-radius: 30px;
 }
