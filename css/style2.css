@@ -1,44 +1,43 @@
 body {
-display: grid;
-place-items: center;
-background-color: #dceef5;
-color: #000000;
-font-family: 'Verdana';
-}
+    display: grid;
+    place-items: center;
+    background-color: #d7ccd9;
+    color: #000000;
+    font-family: 'Verdana';
+    
+    }
 #skip {
 position: absolute;
 top: -40px;
 left: -40px;
+font-family: 'Chalkduster';
 }
 text{
 font-family: 'Verdana';
 }
 nav {
-border: 5px solid hsl(210, 62%, 34%);
-font-size: 18px;
-text-align: center;
-grid-column: 1 / -1;
-width: 100%;
-font-family: 'Verdana';
-}
+    background-color: #b387cf;
+    font-size: 18px;
+    text-align: center;
+    grid-column: 1 / -1;
+    width: 100%;
+    }
 nav ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 justify-content: center;
+font-family: 'Chalkduster';
 }
 nav li {
 display: inline-block;
 }
 
 nav a.active {
-text-decoration: underline;
-color: hsl(210, 62%, 34%);
+text-decoration:overline
 }
 
 
-a:hover {
-color: hsl(210, 62%, 34%);
-}
+
   
 
 .ingredients {
@@ -62,16 +61,15 @@ color: #634eb0;
 text-align: center;
 width: 100%;
 font-family: 'Chalkduster';
+margin: -1px;
 }
 .origin,.source,.category{
-font-size: 16px;
+font-size: 20px;
 font-weight: bold;
 color: #2368a7;
 text-align: center;
 width: 100%;
 font-family: 'Chalkduster';
-
-
 }
 
 h3 {
@@ -79,7 +77,7 @@ font-size: 20px;
 font-weight: bold;
 color: #2368a7;
 text-align: center;
-white-space: nowrap;
+
 width: 100%;
 font-family: 'Chalkduster';
 }
@@ -128,7 +126,11 @@ border-radius: 30px;
 nav a {
 padding: 5px;
 text-decoration: none;
-color: #2c3e50;
+color: #072645;
+}
+
+a:hover {
+    color: hsl(210, 62%, 34%);
 }
 
 
@@ -160,19 +162,7 @@ text-align: center;
 
 
 
-.origin {
-color: #065f8c;
-}
 
-
-.source {
-color: #065f8c;
-}
-
-
-.category {
-color: #065f8c;
-}
 .thumbnail {
 width: 400px;
 }
@@ -240,18 +230,14 @@ transform: scale(1);
 }
 }
 
-
-
-
-
-
 @media only screen and (min-width: 800px) {
 #skip {
 position: absolute;
 color: hsl(210, 62%, 34%);
 top: 10px;
 left: 10px;
-font-family: 'Verdana';
+font-family: 'Chalkduster';
+
 }
 .lastimages {
     display: grid;
@@ -293,9 +279,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 }
-nav{
-border: 2px solid hsl(210, 62%, 34%);
-}
+
 .lastimages img {
 width: 300px; /* Adjust the width to fit the container */
 height: 200px; /* Maintain the aspect ratio */
